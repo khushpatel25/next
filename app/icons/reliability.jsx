@@ -1,0 +1,40 @@
+import React from "react";
+
+const Reliability = () => {
+  return (
+    <svg
+      width="56"
+      height="57"
+      viewBox="0 0 66 67"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="1.13672"
+        y="10.9023"
+        width="55.1376"
+        height="54.3757"
+        rx="11"
+        stroke="#7B61FF"
+        stroke-width="2"
+      />
+      <circle
+        opacity="0.7"
+        cx="54.4314"
+        cy="11.4275"
+        r="10.4275"
+        stroke="#6C7EFF"
+        stroke-width="2"
+      />
+      <circle
+        cx="54.4327"
+        cy="11.4288"
+        r="6.23742"
+        stroke="#7887FC"
+        stroke-width="2"
+      />
+    </svg>
+  );
+};
+
+export default Reliability;

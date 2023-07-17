@@ -1,0 +1,34 @@
+import React from "react";
+
+const CardDefault = () => {
+  return (
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 38 38"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+    >
+      <rect width="38" height="38" fill="url(#pattern0)" />
+      <defs>
+        <pattern
+          id="pattern0"
+          patternContentUnits="objectBoundingBox"
+          width="1"
+          height="1"
+        >
+          <use xlinkHref="#image0_5162_31118" transform="scale(0.0131579)" />
+        </pattern>
+        <image
+          id="image0_5162_31118"
+          width="76"
+          height="76"
+          xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAYAAADHl1ErAAAAAXNSR0IArs4c6QAAAoxJREFUeF7tm0ty2kAURV9D9Thegr2CeAkwoClm8QqSrCBeir2C2CtIZhTNAJYQVpDsIDAG0amntFRCSIaLsaskrkZ8Lp8+nNdqUa+N8IAIGCjNsBAYKAGBERhIAIzTMAIDCYBxGkZgIAEwTsMIDCQAxmkYgYEEwDgNOwew8Xh83e1270WkJyIfwfdsenwhIvMkSR5Go9Gf8mD2DPPeP4jIt6aP+kzf/9E5p+LkRw5sNptdrdfrecGolYg8hRDmnU5nORgM9LnWHtPptLfdbq+MMVpVX0TkQxzswlrb6/f7S72fAquA9Wytvc9CraVUM7DIQyvtcxlaCqxUhl+dc0+XBqlqvN57Ne17fC4tTxMn+N/xwWfnnIZ4RALee5UnNS1JkhtTsGtlrb2+1DKsMySWp54tdU57VGC/4kS/d0agZv8JFKRaKLCgD4YQ7obD4U9C2icwmUw+GWN+pGfJDJgxpt/2pcOpMuiSI4Qw2wHmnONl0svLjL8EBiiXV2J245BhWQ74jEZFjx1/Pocd+4JGUQC+7LHjJ7AIlcAAuzRKYAQGEgDjZzcM/PzWxeFlResIgAMiMAIDCYBxGkZgIAEwTsMIDCQAxmkYgYEEwDgNIzCQABhvnWGv/Uf44i6+CezEkgFflsdpGEiOwAjsZQKcw0BD3jreumXFuwNjM0o98spmFLY71QMrtzuxoe5APZcb6rK+fLZsVoDba9lkU/DB5cpuU7DG2XZeDa2y7Vyj3NiwC6xqY4Nz7lZT3DoThdlsNrdHb50p8uXmrB3b6jdnFWPc/gds/3vrS4ymvz9bzcFfkMAIDCQAxmkYgYEEwDgNIzCQABinYQQGEgDjNIzAQAJgnIYRGEgAjP8DFKLw/mS/txgAAAAASUVORK5CYII="
+        />
+      </defs>
+    </svg>
+  );
+};
+
+export default CardDefault;
