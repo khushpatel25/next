@@ -4,6 +4,7 @@ import '../globals.css'
 import { notFound } from 'next/navigation';
 import "/public/fonts/silka/stylesheet.css"
 import "/public/fonts/Gilroy/stylesheet.css"
+import Bottomnav from '../components/bottomnav';
 
 
 export const metadata = {
@@ -24,7 +25,9 @@ export default function RootLayout({ children,params }) {
     <html lang={locale}>
       <body>
         <Navbar/>
-        {children}</body>
+        {children}
+        <Bottomnav/>
+        </body>
     </html>
   )
 }

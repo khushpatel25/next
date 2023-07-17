@@ -3,14 +3,15 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
-const Navlink = ({ text, link }) => {
+const Navlink = ({ text, link,classes }) => {
   const path = usePathname();
   const pathWithoutLang = path.replace(/^\/[a-z]{2}/, "");
   return (
     <Link
       href={link}
-      className="relative font-nohemi font-[350] text-[#C7C7C7]"
+      className={clsx(classes,"relative font-gilroy font-[350] text-[14px] text-[#C7C7C7] hover:text-white")}
     >
       {link === pathWithoutLang && (
         <motion.span

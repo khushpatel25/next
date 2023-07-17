@@ -7,7 +7,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Globe from "../icons/globe";
 
-export default function LocaleSwitcherSelect() {
+export default function LocaleSwitcherbottom() {
   const router = useRouter();
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
@@ -29,14 +29,14 @@ export default function LocaleSwitcherSelect() {
 
 
   return (
-    <div className="relative inline-block text-left">
+    <div className="relative inline-block text-left ">
       <div>
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex items-center gap-3 justify-center w-full rounded-full shadow-sm px-3 py-3 bg-[#353535] text-sm font-medium text-brandwhite hover:bg-gray-50 focus:outline-none focus:ring-none  focus:bg-[#3c3c3c]"
+          className="inline-flex items-center gap-3 justify-center w-full rounded-full  px-[8px] py-1  text-sm font-medium border-none bg-[#3c3c3c] text-brandwhite hover:bg-gray-50 focus:outline-none focus:bg-[#3c3c3c] "
         >
-          <Globe/>
+          {/* <Globe/> */}
           <div className="flex gap-1 font-silka font-normal" >
           {currentLocale}
           <svg
@@ -58,7 +58,7 @@ export default function LocaleSwitcherSelect() {
 
       {isOpen && (
         <motion.div
-          className="origin-top-right absolute right-0 mt-2  rounded-md shadow-lg bg-[#3c3c3c] ring-1ring-1 ring-black ring-opacity-5"
+          className="origin-top-right absolute right-0 bottom-10 mt-2  rounded-md shadow-lg bg-[#3c3c3c] ring-1 ring-black ring-opacity-5 focus:bg-black focus-within:bg-black active:bg-black  "
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.1 }}

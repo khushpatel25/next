@@ -15,7 +15,8 @@ module.exports = {
       colors:{
         brandblack:'#050505',
         accent:'#14BDDC',
-        brandwhite:"#F2F2F2"
+        brandwhite:"#F2F2F2",
+        brandgrey:"#A7A7A7"
       },
       fontFamily: {
         silka: ['Silka'],
