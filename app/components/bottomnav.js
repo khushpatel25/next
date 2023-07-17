@@ -1,5 +1,5 @@
 import React from "react";
-import Navlink from "./navlink";
+import Navlink from "./navlinkbottom";
 import { useTranslations } from "next-intl";
 import LocaleSwitcherSelect from "./LocaleSwitcherbottom";
 
