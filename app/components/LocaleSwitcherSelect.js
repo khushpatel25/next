@@ -54,7 +54,7 @@ export default function LocaleSwitcherSelect() {
 
       {isOpen && (
         <motion.div
-          className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+          className="origin-top-right absolute right-0 mt-2  rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.1 }}
@@ -74,7 +74,7 @@ export default function LocaleSwitcherSelect() {
           >
             {Object.entries(languageMap).map(([lang, fullName], i) => (
               <motion.div
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 cursor-pointer"
                 role="menuitem"
                 key={i}
                 onClick={() => onSelectChange(lang)}
