@@ -34,7 +34,7 @@ export default function LocaleSwitcherSelect() {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex items-center gap-3 justify-center w-full rounded-full shadow-sm px-3 py-3 bg-[#353535] text-sm font-medium text-brandwhite hover:bg-gray-50 focus:outline-none focus:ring-none  focus:bg-[#3c3c3c]"
+          className="inline-flex items-center gap-3 justify-center w-full rounded-full shadow-sm px-3 py-3 bg-[#353535] text-sm font-medium text-brandwhite hover:bg-[#1C1C1C] focus:outline-none focus:ring-none  focus:bg-[#3c3c3c]"
         >
           <Globe/>
           <div className="flex gap-1 font-silka font-normal" >
@@ -78,7 +78,7 @@ export default function LocaleSwitcherSelect() {
           >
             {Object.entries(languageMap).map(([lang, fullName], i) => (
               <motion.div
-                className="block px-4 py-2 text-sm text-brandgrey hover:bg-gray-100 hover:text-gray-900 cursor-pointer"
+                className="block px-4 py-2 text-sm text-brandgrey hover:bg-[#696969] hover:text-gray-900 cursor-pointer"
                 role="menuitem"
                 key={i}
                 onClick={() => onSelectChange(lang)}

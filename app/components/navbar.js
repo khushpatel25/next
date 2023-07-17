@@ -27,7 +27,7 @@ const Navbar = () => {
           <LocaleSwitcherSelect />
           <Custombutton
             text={"Book a Service"}
-            classes={"text-[#ffffff] bg-accent"}
+            classes={"text-[#ffffff] bg-accent hover:bg-[#0E9BB5] transition-all duration-500"}
           />
         </div>
         <div className={'lg:hidden'}>
