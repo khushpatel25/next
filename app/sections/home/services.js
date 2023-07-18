@@ -11,7 +11,7 @@ const Services = () => {
     
     <div >
       <Padding>
-        <Tabs tabContainerStyle={'mt-16 xl:mt-32'}>
+        <Tabs tabContainerStyle={'mt-16 xl:mt-32 border border-1-black rounded-full p-1'}>
           <Tab id="1" label={t("k427")} >
             <div><CleaningCard src={"/images/cleaning.webp"} href={'/aboutus'} service={t("k701")} active={true}/></div>
           </Tab>
