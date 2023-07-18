@@ -19,8 +19,8 @@ const Navbar = () => {
             </Link>
           <div className="md:flex gap-8 hidden">
             <Navlink text={t("k259")} link={"/aboutus"} />
-            <Navlink text={t("eaef6085e2")} link={"/registerasprofessional"} />
-            <Navlink text={t("8f59f637a8")} link={"/services"} />
+            <Navlink text={t("k1437")} link={"/registerasprofessional"} />
+            <Navlink text={t("k1078")} link={"/services"} />
           </div>
         </div>
         <div className="lg:flex gap-3 hidden">
