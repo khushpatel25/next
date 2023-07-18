@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-export default function useOnScreen(ref) {
+export function useCurrentLocation() {
   const [isServiceble, setIsServiceble] = useState(true);
 
   useEffect(() => {

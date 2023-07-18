@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import clsx from "clsx";
 import ScrollableContainer from "./ScrollableContainer";
 
-
 function Tab({
   id,
   label,
@@ -12,7 +11,7 @@ function Tab({
   setActiveTab,
   tabStyle,
   disabled = false,
-  extraComponent = null, 
+  extraComponent = null,
 }) {
   return (
     <button
@@ -81,7 +80,7 @@ function Tabs({ children, tabContainerStyle }) {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -50 * direction }}
                 transition={{ duration: 0.4 }}
-                className="mt-20 xl:mt-22"
+                className="mt-10 xl:mt-22"
               >
                 {child.props.children}
               </motion.div>

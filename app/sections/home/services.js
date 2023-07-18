@@ -1,5 +1,6 @@
 import ScrollableContainer from "@/app/components/ScrollableContainer";
 import CleaningCard from "@/app/components/cleaningcard";
+import Location from "@/app/components/location";
 import Padding from "@/app/components/padding";
 import { Tab, Tabs } from "@/app/components/tabs";
 import { useTranslations } from "next-intl";
@@ -7,10 +8,13 @@ import React from "react";
 
 const Services = () => {
     const t=useTranslations()
+    
   return (
     
     <div >
       <Padding>
+
+            
         <Tabs tabContainerStyle={'mt-16 xl:mt-32 border border-1-black rounded-full p-1'}>
           <Tab id="1" label={t("k427")} >
             <div><CleaningCard src={"/images/cleaning.webp"} href={'/aboutus'} service={t("k701")} active={true}/></div>
@@ -28,6 +32,7 @@ const Services = () => {
             <div>Content for Tab 1</div>
           </Tab>
         </Tabs>
+
       </Padding>
     </div>
 
