@@ -20,12 +20,14 @@ export default function LocaleSwitcherSelect() {
   const languageMap = {
     en: "English",
     de: "German",
-    cr: "Croatian",
+    hr: "Croatian",
     it: "Italian",
     pt: "Portuguese",
     tr: "Turkish",
+    es: "Spanish",
+    fr: "French",
+    sr: "Latin"
   };
-
 
 
   return (
