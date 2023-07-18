@@ -26,7 +26,7 @@ export default function LocaleSwitcherSelect() {
     tr: "Turkish",
     es: "Spanish",
     fr: "French",
-    sr: "Latin"
+    sr: "Serbian"
   };
 
 

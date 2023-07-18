@@ -18,7 +18,7 @@ const Navbar = () => {
           <Logo color={"white"} />
             </Link>
           <div className="md:flex gap-8 hidden">
-            <Navlink text={t("93ffc1e2a2")} link={"/aboutus"} />
+            <Navlink text={t("k259")} link={"/aboutus"} />
             <Navlink text={t("eaef6085e2")} link={"/registerasprofessional"} />
             <Navlink text={t("8f59f637a8")} link={"/services"} />
           </div>
