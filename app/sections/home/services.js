@@ -14,7 +14,7 @@ const Services = () => {
       <Padding>
         <Tabs
           tabContainerStyle={
-            "mt-16 xl:mt-32 border border-1-black rounded-full p-1"
+            "mt-16 xl:mt-28 border border-1-black rounded-full p-1"
           }
         >
           <Tab id="1" label={t("k427")}>
@@ -52,7 +52,32 @@ const Services = () => {
             </div>
           </Tab>
           <Tab id="2" label={t("k703")}>
-            <div>Content for Tab 1</div>
+            <div className="flex gap-4 md:gap-10">
+              <CleaningCard
+                src={"/images/chef.webp"}
+                href={"/aboutus"}
+                service={t("k991")}
+                active={true}
+              />
+              <CleaningCard
+                src={"/images/hospitality2.webp"}
+                href={"/aboutus"}
+                service={t("k1076")}
+                active={true}
+              />
+              <CleaningCard
+                src={"/images/sommelier.webp"}
+                href={"/aboutus"}
+                service={t("k1350")}
+                active={true}
+              />
+              <CleaningCard
+                src={"/images/wine.webp"}
+                href={"/aboutus"}
+                service={t("k1349")}
+                active={false}
+              />
+            </div>
           </Tab>
           <Tab
             id="3"

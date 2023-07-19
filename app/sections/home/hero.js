@@ -22,7 +22,7 @@ const Hero = () => {
           <Applegrey />
           <Qrgrey />
         </div>
-        <div className="bg-[#1C1C1C] mt-8 xl:mt-16 rounded-[2rem] p-[1rem] 2xl:min-w-[60dvw] flex justify-center mb-40 xl:mb-0 ">
+        <div className="bg-[#1C1C1C] mt-8 xl:mt-16 rounded-[2rem] p-[1rem] 2xl:min-w-[60dvw] flex justify-center mb-40 2xl:mb-0 ">
           <Image src={hero} />
         </div>
       </div>
