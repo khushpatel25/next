@@ -16,20 +16,21 @@ const CleaningCard = ({
 }) => {
   const t = useTranslations();
   return (
-    <div className="flex flex-col items-start">
+    <div className="">
       <Link href={href}>
         <div className="w-[30vw] md:w-[25vw] lg:w-[15vw] xl:w-[14vw] 2xl:w-60">
           <img src={src} alt="service card" />
         </div>
         <div
           className={`font-gilroy ${
-            active ? "text-[#2B2D33] " : "text-[#929292]"
-          } font-medium max-w-[60%] md:max-w-max text-base xl:text-lg my-2 leading-5 lg:leading-[2rem] ${
+            active ? "text-[#2B2D33]" : "text-[#929292]"
+          } font-medium w-[30vw] md:w-[25vw] lg:w-[15vw] xl:w-[14vw] 2xl:w-60 text-[14px] xl:text-lg inline-block my-2 leading-5 lg:leading-[2rem] ${
             disabled && "opacity-50 pointer-events-none"
           }`}
         >
           {t(service || name)}
         </div>
+
         <div className="flex items-center space-x-2">
           {location && <Location />}
           <p className="font-silka text-[#929292] text-sm lg:text-base">
