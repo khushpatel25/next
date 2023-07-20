@@ -13,7 +13,7 @@ const Testimonial = ({ name, category, description, stars, idx }) => {
       <div className="flex flex-col space-y-2 items-start min-h-[max-content]">
         <Reviewer name={name} stars={stars} category={(category)} />
         <p
-          className="font-silka text-[#545454] text-base md:text-base lg:text-sm leading-[170%] lg:leading-[202%] text-justify  lg:max-w-[80%]"
+          className="font-silka text-[#545454] text-[12px] md:text-base lg:text-sm leading-[170%] lg:leading-[202%] text-justify  lg:max-w-[80%]"
         >
           {(description)}
         </p>
