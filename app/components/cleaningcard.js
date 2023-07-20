@@ -24,7 +24,7 @@ const CleaningCard = ({
         <div
           className={`font-gilroy ${
             active ? "text-[#2B2D33]" : "text-[#929292]"
-          } font-medium w-[30vw] md:w-[25vw] lg:w-[15vw] xl:w-[14vw] 2xl:w-60 text-[14px] xl:text-lg inline-block my-2 leading-5 lg:leading-[2rem] ${
+          } font-medium w-[30vw] md:w-[25vw] lg:w-[15vw] xl:w-[14vw] 2xl:w-60 text-[14px] xl:text-[15px] tracking-wide inline-block my-2 leading-5 lg:leading-[2rem] ${
             disabled && "opacity-50 pointer-events-none"
           }`}
         >

@@ -3,11 +3,13 @@ import Testimonial from "@/app/components/testimonial";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import cardData from "../../data/testimonialsData.json";
+import Padding from "@/app/components/padding";
 
 
 const Testimonialsclient = ({ children }) => {
   const [testimonialsList, setTestimonialsList] = useState([...cardData]);
   return (
+    <Padding>
     <div className="flex justify-center mt-16 xl:mt-44">
       <div className="overflow-hidden max-w-[95vw] rounded-3xl bg-[#EFF2F3]">
         <div>{children}</div>
@@ -65,6 +67,7 @@ const Testimonialsclient = ({ children }) => {
         </motion.div>
       </div>
     </div>
+    </Padding>
   );
 };
 
