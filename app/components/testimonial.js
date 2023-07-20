@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 import Reviewer from "./reviewer";
 
 const Testimonial = ({ name, category, description, stars, idx }) => {
-//   const t = useTranslations();
+  const t = useTranslations();
   
   return (
     <div
@@ -15,7 +15,7 @@ const Testimonial = ({ name, category, description, stars, idx }) => {
         <p
           className="font-silka text-[#545454] text-[12px] md:text-base lg:text-sm leading-[170%] lg:leading-[202%] text-justify  lg:max-w-[80%]"
         >
-          {(description)}
+          {t(description)}
         </p>
       </div>
     </div>

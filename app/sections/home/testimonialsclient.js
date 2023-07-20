@@ -24,7 +24,7 @@ const Testimonialsclient = ({ children }) => {
             ease: "linear",
           }}
         >
-          <div className="flex  gap-16  pt-10">
+          <div className="flex  gap-14  pt-10">
             {testimonialsList.map((elem, idx) => (
               <div key={idx}>
                 <Testimonial
