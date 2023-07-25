@@ -69,7 +69,7 @@ function Tabs({ children, tabContainerStyle }) {
         </div>
       </ScrollableContainer>
 
-      <ScrollableContainer>
+      <ScrollableContainer classes={'w-full'} >
         <AnimatePresence initial={false}>
           {children.map((child) => {
             if (child.props.id !== activeTab) return null;

@@ -18,7 +18,7 @@ const Services = () => {
           }
         >
           <Tab id="1" label={t("k427")}>
-            <div className="flex gap-4 md:gap-10">
+            <div className="flex gap-10 md:gap-10 justify-between">
               <CleaningCard
                 src={"/images/cleaning.webp"}
                 href={"/aboutus"}
@@ -52,7 +52,7 @@ const Services = () => {
             </div>
           </Tab>
           <Tab id="2" label={t("k703")}>
-            <div className="flex gap-4 md:gap-10">
+            <div className="flex gap-10 md:gap-10 ">
               <CleaningCard
                 src={"/images/chef.webp"}
                 href={"/aboutus"}
