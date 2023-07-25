@@ -11,7 +11,7 @@ import Link from "next/link";
 const Navbar = () => {
   const t = useTranslations();
   return (
-    <Padding classes={"bg-brandblack "}>
+    <Padding classes={"bg-brandblack sticky top-0 z-[100]"}>
       <div className="font-silka bg-brandblack flex items-center justify-between pt-3">
         <div className=" items-center gap-8 flex">
             <Link href={'/'}>
