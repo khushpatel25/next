@@ -6,9 +6,9 @@ import "/public/fonts/Gilroy/stylesheet.css"
 import "/public/fonts/silka/stylesheet.css"
 import Bottomnav from '../components/bottomnav';
  
-export function generateStaticParams() {
-  return [{locale: 'en'}, {locale: 'de'},{locale: 'es'},{locale: 'fr'},{locale: 'hr'},{locale: 'it'},{locale: 'pt'},{locale: 'sr'},{locale: 'tr'}];
-}
+// export function generateStaticParams() {
+//   return [{locale: 'en'}, {locale: 'de'},{locale: 'es'},{locale: 'fr'},{locale: 'hr'},{locale: 'it'},{locale: 'pt'},{locale: 'sr'},{locale: 'tr'}];
+// }
  
 export default async function LocaleLayout({children, params: {locale}}) {
   let messages;
