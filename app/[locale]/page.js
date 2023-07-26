@@ -4,11 +4,18 @@ import Services from '../sections/home/services'
 import Testimonials from '../sections/home/testimonials'
 import Topservices from '../sections/home/topservices'
 import Servicesbar from '../components/servicesbar'
+import Benefits from '../sections/home/benefits'
 
 
 export default function Home() {
 
   let tags = [
+    "Cleaning Services",
+    "k957",
+    "k279",
+    "k638",
+    "k991",
+    "k575",
     "Cleaning Services",
     "k957",
     "k279",
@@ -29,6 +36,7 @@ export default function Home() {
       <Testimonials/>
       <Topservices/>
       <Servicesbar tags={tags}/>
+      <Benefits/>
     </div>
   )
 }

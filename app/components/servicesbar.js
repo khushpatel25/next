@@ -19,7 +19,7 @@ const Servicesbar = ({tags}) => {
     };
     const t=useTranslations()
   return (
-    <div className="w-full mt-[20rem] lg:mt-[32rem] text-white flex justify-between items-center overflow-hidden h-16   bg-accent">
+    <div className="w-full mt-[30rem] lg:mt-[32rem] text-white flex justify-between items-center overflow-hidden h-16   bg-accent">
             <motion.div
                 className="flex space-x-20"
                 variants={marqueeVariants}

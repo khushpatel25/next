@@ -9,7 +9,7 @@ const Topservices = () => {
   return (
     <Padding
       classes={
-        "flex justify-center bg-[#2B2D33] mt-24 xl:mt-44 pt-[4rem] md:pt-[6rem] h-[60vh] 2xl:h-[40vh] relative"
+        "flex justify-center bg-[#2B2D33] mt-24 xl:mt-44 pt-[4rem] md:pt-[6rem] md:h-[50vh] h-[40vh] 2xl:h-[40vh] relative"
       }
     >
       <div className="max-w-[1400px] flex flex-col lg:flex-row  lg:justify-between items-center w-full lg:items-start lg:gap-0 gap-4 ">

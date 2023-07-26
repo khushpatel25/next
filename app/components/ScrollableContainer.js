@@ -13,7 +13,7 @@ function ScrollableContainer({ children, classes }) {
   } = useDragScroll();
   return (
     <div
-      className="flex overflow-x-scroll hide-scrollbar snap-start cursor-pointer md:cursor-default"
+      className="flex overflow-x-scroll  hide-scrollbar snap-start cursor-pointer md:cursor-default"
       ref={scrollContainerRef}
       onMouseDown={onMouseDown}
       onMouseLeave={onMouseLeave}
