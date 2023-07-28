@@ -5,6 +5,7 @@ import WhiteTickOutline from "@/app/icons/whiteTickOutline";
 import React from "react";
 
 const Benefits = () => {
+    const tag=["hello","hello2","helo3"]
   return (
     <div className="mt-[14rem] xl:mt-[22rem]">
       <div className="flex justify-center">
@@ -22,6 +23,7 @@ const Benefits = () => {
                 src={"/images/cleaningcard.png"}
                 w={200}
               h={0}
+              features={tag}
               />
               
             </div>
@@ -31,6 +33,8 @@ const Benefits = () => {
               src={"/images/iphone1.png"}
               w={120}
               h={0}
+              features={tag}
+
             />
             <Benefit
               heading={"k529"}
@@ -38,6 +42,8 @@ const Benefits = () => {
               src={"/images/support.png"}
               w={200}
               h={0}
+              features={tag}
+
             />
           </div>
 
