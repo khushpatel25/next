@@ -1,3 +1,4 @@
+'use client'
 
 const AboutUsDescription = ({ title, titleDesc, Desc1, Desc2, id }) => {
 

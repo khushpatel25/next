@@ -1,9 +1,9 @@
 "use client";
-import Testimonial from "@/app/components/testimonial";
+import Testimonial from "../../components/testimonial";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import cardData from "../../data/testimonialsData.json";
-import Padding from "@/app/components/padding";
+import Padding from "../../components/padding";
 import { useTranslations } from "next-intl";
 
 const Testimonials = () => {

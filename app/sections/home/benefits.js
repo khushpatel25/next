@@ -1,7 +1,7 @@
-import ScrollableContainer from "@/app/components/ScrollableContainer";
-import Benefit from "@/app/components/benefit";
-import Padding from "@/app/components/padding";
-import WhiteTickOutline from "@/app/icons/whiteTickOutline";
+import ScrollableContainer from "../../components/ScrollableContainer";
+import Benefit from "../../components/benefit";
+import Padding from "../../components/padding";
+import WhiteTickOutline from "../../icons/whiteTickOutline";
 import React from "react";
 
 const Benefits = () => {

@@ -1,3 +1,5 @@
+'use client'
+
 const TeamCard = ({ src, name, designation }) => {
   return (
     <div className="flex flex-col justify-center items-start">

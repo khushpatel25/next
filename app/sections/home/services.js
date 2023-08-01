@@ -1,8 +1,8 @@
-import ScrollableContainer from "@/app/components/ScrollableContainer";
-import CleaningCard from "@/app/components/cleaningcard";
-import Location from "@/app/components/location";
-import Padding from "@/app/components/padding";
-import { Tab, Tabs } from "@/app/components/tabs";
+import ScrollableContainer from "../../components/ScrollableContainer";
+import CleaningCard from "../../components/cleaningcard";
+import Location from "../../components/location";
+import Padding from "../../components/padding";
+import { Tab, Tabs } from "../../components/tabs";
 import { useTranslations } from "next-intl";
 import React from "react";
 

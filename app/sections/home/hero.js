@@ -1,8 +1,8 @@
-import Play from "@/app/icons/playgrey";
+import Play from "../../icons/playgrey";
 import Padding from "../../components/padding";
 import React from "react";
-import Applegrey from "@/app/icons/applegrey";
-import Qrgrey from "@/app/icons/qrgrey";
+import Applegrey from "../../icons/applegrey";
+import Qrgrey from "../../icons/qrgrey";
 import Image from "next/image";
 import hero from "/public/images/heroimgnew.png";
 import { useTranslations } from "next-intl";

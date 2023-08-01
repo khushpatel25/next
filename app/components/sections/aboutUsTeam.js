@@ -1,14 +1,18 @@
+'use client'
+
 import React, { useRef, useState } from "react";
 import { css } from "@emotion/react"; // Replace the @emotion/css import
-import useDragScroll from "./useDragScroll"; // Update this import based on the custom hook implementation
+import useDragScroll from "../sections/useDragScroll"; // Update this import based on the custom hook implementation
 // import { useTranslation } from "i18next"; // Replace react-i18next with next-i18next
 
 const AboutUsTeam = ({ title, children, services }) => {
+
   const [grab, setGrab] = useState(false);
   const ref = useRef(null);
-//   useDragScroll({
-//     sliderRef: ref,
-//   });
+
+  useDragScroll({
+    sliderRef: ref,
+  });
 
   const handleMouseDown = () => {
     setGrab(true);
@@ -18,7 +22,7 @@ const AboutUsTeam = ({ title, children, services }) => {
     setGrab(false);
   };
 
-//   const { t } = useTranslation(); // Use next-i18next's useTranslation hook
+  // const { t } = useTranslation(); // Use next-i18next's useTranslation hook
 
   return (
     <div

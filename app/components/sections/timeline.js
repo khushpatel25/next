@@ -1,113 +1,166 @@
-import { useRef, useState } from 'react';
-import css from 'styled-jsx/css'; // If you want to use styled-jsx for inline CSS.
+/** @format */
+'use client'
+
+import { Box, Center, Text } from "@chakra-ui/react";
+import { css } from "@emotion/css";
+import { t } from "i18next";
+import React, { useRef, useState } from "react";
+import useDragScroll from "./useDragScroll";
+
+import WhiteTickOutline from "../../icons/whiteTickOutline.svg";
 
 const Timeline = () => {
-  const [grab, setGrab] = useState(false);
-  const ref = useRef(null);
+    const [grab, setGrab] = useState(false);
+    const ref = useRef(null);
+    useDragScroll({
+        sliderRef: ref,
+        momentumVelocity: 0.5,
+    });
 
-  const useDragScroll = () => {};
+    const handleMouseDown = () => {
+        setGrab(true);
+    };
 
-  useDragScroll({
-    sliderRef: ref,
-    momentumVelocity: 0.5,
-  });
+    const handleMouseUp = () => {
+        setGrab(false);
+    };
 
-  const handleMouseDown = () => {
-    setGrab(true);
-  };
-
-  const handleMouseUp = () => {
-    setGrab(false);
-  };
-
-  return (
-    <div
-      className="py-8 flex w-full text-center flex-col justify-center items-center overflow-hidden mt-[150px]"
-    >
-      <div
-        className="flex w-90vw max-w-1500px relative flex-col justify-start items-start lg:start base:center overflow-x-scroll"
-        onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
-        ref={ref}
-        style={{ cursor: grab ? 'grabbing' : 'grab' }}
-      >
-        <div
-          className="hidden lg:block h-1px w-5200px absolute top-15px bg-gradient-to-r from-blackAlpha.50 via-blackAlpha.700 to-blackAlpha.100"
-        />
-        <div
-          className="block lg:hidden h-full w-1px absolute left-15px bottom-0 bg-gradient-to-b from-blackAlpha.50 via-blackAlpha.700 to-blackAlpha.100"
-        />
-        <div
-          className="flex pt-0 lg:pt-0.5rem w-5500px lg:w-5500px base:w-90vw gap-2rem lg:gap-2.5rem flex-col lg:flex-row justify-center lg:start items-start lg:start base:start"
+    return (
+        <Box
+            py={"2rem"}
+            display={"flex"}
+            w={"full"}
+            textAlign={"center"}
+            flexDir={"column"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            overflow={"hidden"}
         >
-          <div
-            className="flex flex-col lg:flex-row min-w-20rem gap-2rem justify-center lg:center items-start lg:center base:start"
-          >
-            <div
-              className="w-30px h-30px min-w-30px z-100 rounded-full bg-accent.900"
-            />
-            <div className="mt-1.2rem mx-0.4rem flex flex-col text-center lg:text-center justify-center items-start lg:items-center">
-              <p className="font-silka font-light text-14px lg:text-14px base:text-12px text-818799">
-                2019
-              </p>
-              <p className="py-1rem font-silka font-semibold text-20px lg:text-20px base:text-14px text-2B2D33">
-                The Idea
-              </p>
-              <p className="font-silka max-w-75% font-medium text-12px lg:text-12px base:text-10px text-8A8A8A px-10 mt-3">
-                Flavio and Sandro had the idea to make their program, platform
-                accessible to all people in Switzerland.
-              </p>
-            </div>
-          </div>
-          <div
-            className="flex flex-col lg:flex-row min-w-20rem gap-2rem justify-center lg:center items-start lg:center base:start"
-          >
-            <div
-              className="w-30px h-30px min-w-30px z-100 rounded-full bg-accent.900"
-            />
-            <div className="mt-1.2rem mx-0.4rem flex flex-col text-center lg:text-center justify-center items-start lg:items-center">
-              <p className="font-silka font-light text-14px lg:text-14px base:text-12px text-818799">
-                2019
-              </p>
-              <p className="py-1rem font-silka font-semibold text-20px lg:text-20px base:text-14px text-2B2D33">
-                The Idea
-              </p>
-              <p className="font-silka max-w-75% font-medium text-12px lg:text-12px base:text-10px text-8A8A8A px-10 mt-3">
-                Flavio and Sandro had the idea to make their program, platform
-                accessible to all people in Switzerland.
-              </p>
-            </div>
-          </div>
-          <div
-            className="flex flex-col lg:flex-row min-w-20rem gap-2rem justify-center lg:center items-start lg:center base:start"
-          >
-            <div
-              className="w-30px h-30px min-w-30px z-100 rounded-full bg-accent.900"
-            />
-            <div className="mt-1.2rem mx-0.4rem flex flex-col text-center lg:text-center justify-center items-start lg:items-center">
-              <p className="font-silka font-light text-14px lg:text-14px base:text-12px text-818799">
-                2019
-              </p>
-              <p className="py-1rem font-silka font-semibold text-20px lg:text-20px base:text-14px text-2B2D33">
-                The Idea
-              </p>
-              <p className="font-silka max-w-75% font-medium text-9px lg:text-9px base:text-9px text-8A8A8A px-10 mt-3">
-                Flavio and Sandro had the idea to make their program, platform
-                accessible to all people in Switzerland.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <style jsx>{styles}</style>
-    </div>
-  );
-};
+            <Box
+                display={"flex"}
+                w={"90vw"}
+                maxW={"1500px"}
+                position={"relative"}
+                flexDir={"column"}
+                justifyContent={{
+                    lg: "start",
+                    base: "center",
+                }}
+                alignItems={"start"}
+                overflowX={"scroll"}
+                className={css`
+          ::-webkit-scrollbar {
+            display: none;
+          }
+        `}
+                ref={ref}
+                onMouseDown={handleMouseDown}
+                onMouseUp={handleMouseUp}
+                cursor={grab != true ? "grab" : "grabbing"}
+            >
+                <Box
+                    display={{ lg: "block", base: "none" }}
+                    h={"1px"}
+                    w={"5200px"}
+                    position={"absolute"}
+                    top={"15px"}
+                    maxW={"1500px"}
+                    bgGradient={
+                        "linear(to-r, blackAlpha.50 0%, blackAlpha.700 3%, blackAlpha.700 50%, blackAlpha.700 96%, blackAlpha.100 100%)"
+                    }
+                />
 
-const styles = css`
-  ::-webkit-scrollbar {
-    display: none;
-  }
-`;
+                <Box
+                    display={{ lg: "none", base: "block" }}
+                    h={"100%"}
+                    w={"1px"}
+                    position={"absolute"}
+                    left={"15px"}
+                    bottom={"0"}
+                    bgGradient={
+                        "linear(to-b, blackAlpha.50 0%, blackAlpha.700 10%, blackAlpha.700 50%, blackAlpha.700 90%, blackAlpha.100 100%)"
+                    }
+                />
+
+                <Box
+                    display={"flex"}
+                    pt={{ lg: "0", base: "5rem" }}
+                    w={{ lg: "5500px", base: "90vw" }}
+                    rowGap={"2.5rem"}
+                    columnGap={"2rem"}
+                    flexDir={{ lg: "row", base: "column" }}
+                    justifyContent={{
+                        lg: "center",
+                        base: "start",
+                    }}
+                    alignItems={{ lg: "start", base: "start" }}
+                >
+                    <Box
+                        display={"flex"}
+                        flexDir={{ lg: "column", base: "row" }}
+                        minW={"20rem"}
+                        columnGap={"2rem"}
+                        justifyContent={"center"}
+                        alignItems={{ lg: "center", base: "start" }}
+                    >
+                        <Box
+                            w={"30px"}
+                            h={"30px"}
+                            minW={"30px"}
+                            zIndex={"100"}
+                            borderRadius={"full"}
+                            bgColor={"accent.900"}
+                        />
+                        <Box
+                            mt={{ lg: "1.2rem", base: "0" }}
+                            mx={"0.4rem"}
+                            display={"flex"}
+                            textAlign={{ lg: "center", base: "start" }}
+                            flexDir={"column"}
+                            justifyContent={"center"}
+                            alignItems={{ lg: "center", base: "start" }}
+                        >
+                            <Text
+                                fontFamily={"silka"}
+                                fontWeight={"light"}
+                                fontSize={{ lg: "14px", base: "12px" }}
+                                color={"#818799"}
+                            >
+
+                                {t("2019")}
+
+                            </Text>
+                            <Text
+                                py={"1rem"}
+                                fontFamily={"silka"}
+                                fontWeight={"semibold"}
+                                fontSize={{ lg: "20px", base: "14px" }}
+                                color={"#2B2D33"}
+                            >
+
+                                {t("The Idea")}
+
+                            </Text>
+                            <Text
+                                fontFamily={"silka"}
+                                maxW={"75%"}
+                                fontWeight={"medium"}
+                                fontSize={{
+                                    lg: "12px",
+                                    base: "10px",
+                                }}
+                                color={"#8A8A8A"}
+                            >
+
+
+                                {t("Flavio and Sandro had the idea to make their program, platform accessible to all people in Switzerland.")}
+                            </Text>
+                        </Box>
+                    </Box>
+                </Box>
+            </Box>
+        </Box>
+    );
+};
 
 export default Timeline;

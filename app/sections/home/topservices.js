@@ -1,6 +1,6 @@
-import ScrollableContainer from "@/app/components/ScrollableContainer";
-import Padding from "@/app/components/padding";
-import Topservicecard from "@/app/components/topservicecard";
+import ScrollableContainer from "../../components/ScrollableContainer";
+import Padding from "../../components/padding";
+import Topservicecard from "../../components/topservicecard";
 import { useTranslations } from "next-intl";
 import React from "react";
 
